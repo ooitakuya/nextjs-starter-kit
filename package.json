@@ -1,0 +1,76 @@
+{
+  "name": "nextjs-starter-kit",
+  "version": "1.0.0",
+  "author": "Takuya Oi <ooitakuya@icloud.com> (https://github.com/ooitakuya/)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ooitakuya/nextjs-starter-kit.git"
+  }, 
+  "homepage": "https://github.com/ooitakuya/nextjs-starter-kit#readme",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "fix": "prettier --write './**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint . --cache --fix",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook -p 6006"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run fix",
+      "npm run lint"
+    ]
+  },
+  "dependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@storybook/addon-essentials": "^6.1.10",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.1.10",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/react-hooks": "^3.7.0",
+    "@types/node": "^14.14.11",
+    "@types/react": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "@typescript-eslint/parser": "^4.9.1",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "^4.1.0",
+    "husky": "^4.3.5",
+    "jest": "^26.6.3",
+    "jest-watch-typeahead": "^0.6.1",
+    "lint-staged": "^10.5.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "react-test-renderer": "^17.0.1",
+    "tailwindcss": "^2.0.1",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.1.2"
+  },
+  "resolutions": {
+    "webpack": "^5.0.0-beta.22"
+  },
+  "license": "MIT"
+}
