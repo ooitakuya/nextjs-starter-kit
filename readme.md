@@ -38,5 +38,3 @@ $ npm run dev
 ```
 
 Access [http://localhost:3000](http://localhost:3000) and you'll see `Hello, Next.js Starter Kit`.
-
-![Twitter Follow](https://img.shields.io/twitter/follow/ooitakuya?style=flat-square)
