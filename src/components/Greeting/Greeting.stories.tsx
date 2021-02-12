@@ -1,4 +1,6 @@
-import { Component as Greeting } from './Greeting'
+import { Meta, Story } from '@storybook/react'
+
+import { Component as Greeting, Props } from './Greeting'
 
 export default {
   title: 'components/Greeting',
@@ -6,9 +8,9 @@ export default {
   argTypes: {
     target: { control: 'text' },
   },
-}
+} as Meta<Props>
 
-const Template = (args) => <Greeting {...args} />
+const Template: Story<Props> = (args) => <Greeting {...args} />
 
 export const World = Template.bind({})
 World.args = {

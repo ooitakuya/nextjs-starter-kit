@@ -1,6 +1,10 @@
 import React from 'react'
 
-type Props = {
+type ContainerProps = {
+  target?: string
+}
+
+export type Props = {
   target: string
 }
 
@@ -9,10 +13,6 @@ export const Component: React.FC<Props> = (props) => (
     Hello, <span className="text-teal-600">{props.target}</span>
   </h1>
 )
-
-type ContainerProps = {
-  target?: string
-}
 
 const Container: React.FC<ContainerProps> = (props) => {
   const target = props.target || 'world'
